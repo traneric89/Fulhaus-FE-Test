@@ -1,0 +1,86 @@
+//Colour Variables
+$canvas: #f7efe7;
+$white: #fff;
+$black: #000;
+$see-through: #000000cc;
+$green: #003941;
+
+//Font Imports
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap");
+
+//Font Variables
+$open-sans: "Open Sans", sans-serif;
+$lora: "Lora", serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.btn {
+  background-color: $black;
+  border: none;
+  color: $white;
+  padding: 10px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 35px;
+  background-color: $white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: $open-sans;
+  h1 {
+    letter-spacing: 0.5px;
+  }
+}
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 35px;
+  background-color: $canvas;
+
+  .home-img {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+  .title {
+    background-color: $green;
+    text-align: center;
+    padding: 75px 50px;
+
+    h1 {
+      font-family: $lora;
+      color: $white;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      font-size: 56px;
+    }
+
+    button {
+      margin-top: 25px;
+      font-family: $open-sans;
+      font-size: 20px;
+    }
+  }
+}
