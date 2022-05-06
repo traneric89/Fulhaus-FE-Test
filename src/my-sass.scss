@@ -50,6 +50,7 @@ $lora: "Lora", serif;
   height: 100vh;
   padding: 0 35px;
   background-color: $canvas;
+  overflow: hidden;
 
   .home-img {
     height: 70%;
@@ -83,4 +84,19 @@ $lora: "Lora", serif;
       font-size: 20px;
     }
   }
+}
+
+.products-grid {
+  background-color: $canvas;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 35px;
+  grid-gap: 50px;
+  justify-items: center;
+}
+
+.item-img {
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
 }
