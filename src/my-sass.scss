@@ -26,7 +26,8 @@ $lora: "Lora", serif;
   padding: 10px 35px;
   text-align: center;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -48,7 +49,7 @@ $lora: "Lora", serif;
 .homepage {
   width: 100vw;
   height: 100vh;
-  padding: 0 35px;
+  padding: 0 50px 0 35px;
   background-color: $canvas;
   overflow: hidden;
 
@@ -68,7 +69,7 @@ $lora: "Lora", serif;
   .title {
     background-color: $green;
     text-align: center;
-    padding: 75px 50px;
+    padding: 80px 50px;
 
     h1 {
       font-family: $lora;
@@ -81,7 +82,7 @@ $lora: "Lora", serif;
     button {
       margin-top: 25px;
       font-family: $open-sans;
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 }
@@ -90,13 +91,44 @@ $lora: "Lora", serif;
   background-color: $canvas;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 35px;
+  padding: 45px;
   grid-gap: 50px;
   justify-items: center;
 }
 
 .item-img {
   border-radius: 20px;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+}
+
+.container {
+  position: relative;
+  color: white;
+  font-family: $lora;
+  background-color: white;
+  border-radius: 25px;
+
+  .img-text {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    padding: 26px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+
+    .product-info {
+      h4 {
+        margin-top: 5px;
+      }
+    }
+
+    .product-cart {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
