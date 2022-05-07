@@ -8,7 +8,7 @@ const Homepage = () => {
         <img src={furnitureImg} alt="" />
       </div>
       <div className="title">
-        <h1>Patio Furniture</h1>
+        <h2 className="patio">Patio Furniture</h2>
         <button className="shop-btn btn">SHOP</button>
       </div>
     </div>

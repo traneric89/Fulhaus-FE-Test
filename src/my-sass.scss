@@ -71,12 +71,12 @@ $lora: "Lora", serif;
     text-align: center;
     padding: 80px 50px;
 
-    h1 {
+    h2 {
       font-family: $lora;
       color: $white;
       font-weight: 500;
       letter-spacing: 0.5px;
-      font-size: 56px;
+      font-size: 60px;
     }
 
     button {
@@ -155,7 +155,7 @@ $lora: "Lora", serif;
   background-color: white;
   height: 95vh;
   width: 40vw;
-  padding: 50px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -206,11 +206,70 @@ $lora: "Lora", serif;
   }
   h2 {
     font-family: $open-sans;
+    padding: 0 10px;
     cursor: pointer;
   }
 
   img {
-    width: 250px;
-    height: 250px;
+    width: 25%;
+    height: 25%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .item-container {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item-container {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .item-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item-container {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .item-img {
+    width: 200px;
+    height: 200px;
+  }
+  .homepage {
+    .title {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cart-container {
+    width: 60vw;
+  }
+  .checkout {
+    .total {
+      h1 {
+        font-size: 26px;
+      }
+    }
+    button {
+      font-size: 14px;
+    }
   }
 }
