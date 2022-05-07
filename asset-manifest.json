@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Fulhaus-BE-Test/static/css/main.185f3b96.css",
+    "main.js": "/Fulhaus-BE-Test/static/js/main.8b0cb4a3.js",
+    "static/media/homepage.jpg": "/Fulhaus-BE-Test/static/media/homepage.ee6830df6cf28744082b.jpg",
+    "index.html": "/Fulhaus-BE-Test/index.html",
+    "main.185f3b96.css.map": "/Fulhaus-BE-Test/static/css/main.185f3b96.css.map",
+    "main.8b0cb4a3.js.map": "/Fulhaus-BE-Test/static/js/main.8b0cb4a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.185f3b96.css",
+    "static/js/main.8b0cb4a3.js"
+  ]
+}
