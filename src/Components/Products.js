@@ -2,7 +2,7 @@ import React from "react";
 import Product from "./Product";
 import { useState, useEffect } from "react";
 
-const Products = () => {
+const Products = ({ onClick }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const Products = () => {
           name={product.fulhausProductName}
           brand={product.material}
           price={product.retailPrice}
+          onClick={onClick}
         />
       ))}
     </div>

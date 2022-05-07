@@ -1,10 +1,12 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ onClick }) => {
   return (
     <div className="navbar">
       <h1>Fülhaus Shop</h1>
-      <button className="cart-btn btn">CART</button>
+      <button className="cart-btn btn" onClick={onClick}>
+        CART
+      </button>
     </div>
   );
 };
