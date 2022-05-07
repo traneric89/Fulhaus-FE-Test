@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "./Item";
 
-const Cart = ({ itemsCart, removeItem }) => {
+const Cart = ({ itemsCart, removeItem, transition }) => {
   const totalPrice = () => {
     let total = itemsCart.reduce((currentTotal, nextTotal) => {
       return currentTotal + nextTotal.price;
@@ -10,7 +10,7 @@ const Cart = ({ itemsCart, removeItem }) => {
   };
 
   return (
-    <div className="cart-container">
+    <div className={`cart-container ${transition}`}>
       <div className="cart-items">
         {itemsCart.map((item) => (
           <Item
